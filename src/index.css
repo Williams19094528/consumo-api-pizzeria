@@ -1,0 +1,220 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: #009688;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.header .cart-info {
+  font-size: 1.2rem;
+}
+
+.home {
+  padding: 2rem;
+  text-align: center;
+}
+
+.pizza-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.pizza-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.pizza-card img {
+  width: 100%;
+  height: auto;
+}
+
+.pizza-card h2 {
+  margin: 0.5rem 0.5rem 0;
+  font-size: 1.5rem;
+}
+
+.pizza-card p {
+  margin: 0.5rem;
+  font-size: 1rem;
+}
+
+.pizza-card button,
+.pizza-card a {
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  color: white;
+}
+
+.pizza-card button {
+  background-color: #f44336;
+}
+
+.pizza-card a {
+  background-color: #009688;
+}
+
+.pizza-card button:hover,
+.pizza-card a:hover {
+  opacity: 0.8;
+}
+
+.pizza-detail-container {
+  display: flex;
+  padding: 2rem;
+  text-align: left;
+}
+
+.pizza-detail-image {
+  width: 50%;
+  border-radius: 8px;
+  margin-right: 2rem;
+}
+
+.pizza-detail-content {
+  max-width: 50%;
+}
+
+.pizza-detail-content h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.pizza-detail-content p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.pizza-detail-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.pizza-detail-content ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+.pizza-detail-content ul li {
+  background: url("data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjRkZGIiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0cHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTkuMTUgMTMuODVsNi4yNS02LjI1IDYuMjUgNi4yNS0xLjQxIDEuNDFMMTYgMTIuNDRWNkg4djYuNDRsLTQuNTkgMy40MWEuOTUuOTUgMCAwIDAtMS4zNCAwbC0xLjQxLTEuNDFMMTggMTJoNi43NmExLjk3IDEuOTcgMCAwIDAgMi41NS0yLjI1SDIyaDJ2MkgydjJoLjc1YTEuOTcgMS45NyAwIDAgMCAyLjU1IDIuMjVIMTguOWwtMy43IDMuN3ptMy0xLjhMMTIgMy42bDYgNiAyIDItNi02IDItMnoiLz48L3N2Zz4=")
+    no-repeat left center;
+  background-size: 20px 20px;
+  padding-left: 30px;
+  margin-bottom: 0.5rem;
+}
+
+.pizza-detail-content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.pizza-detail-content button {
+  padding: 0.5rem 1rem;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pizza-detail-content button:hover {
+  opacity: 0.8;
+}
+
+/* Estilos para el componente Cart */
+.cart-container {
+  padding: 2rem;
+}
+
+.cart-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 1rem;
+}
+
+.cart-item-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  margin-right: 1rem;
+}
+
+.cart-item-info {
+  flex-grow: 1;
+}
+
+.cart-item-controls {
+  display: flex;
+  align-items: center;
+}
+
+.cart-item-button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.cart-item-button.add {
+  background-color: #009688;
+  color: white;
+}
+
+.cart-item-button.remove {
+  background-color: #f44336;
+  color: white;
+}
+
+.cart-item-quantity {
+  margin: 0 0.5rem;
+  font-size: 1.2rem;
+}
+
+.cart-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.pay-button {
+  padding: 0.5rem 1rem;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pay-button:hover {
+  opacity: 0.8;
+}
